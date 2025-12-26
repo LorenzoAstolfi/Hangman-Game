@@ -30,7 +30,7 @@ if language == "english":
 
         display = ""
 
-        if guess == chosen_word
+        if guess == chosen_word:
             display = chosen_word
             game_over = True
         else:
@@ -82,7 +82,7 @@ elif language == "italian":
 
         display = ""
 
-        if guess == chosen_word
+        if guess == chosen_word:
             display = chosen_word
             game_over = True
         else:
