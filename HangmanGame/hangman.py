@@ -30,25 +30,29 @@ if language == "english":
 
         display = ""
 
-        for letter in chosen_word:
-            if letter == guess:
-                display += letter
-                correct_letters.append(guess)
-            elif letter in correct_letters:
-                display += letter
-            else:
-                display += "_"
-
-        print("Word to guess: " + display)
-
-        if guess not in chosen_word:
-            lives -= 1
-            print("You guessed " + guess + ", that's not in the word. You lose a life.")
-            if lives == 0:
-                game_over = True
-
-                print("IT WAS " + chosen_word + "! YOU LOSE")
-                print("***********************YOU LOSE**********************")
+        if guess == chosen_word
+            display = chosen_word
+            game_over = True
+        else:
+            for letter in chosen_word:
+                if letter == guess:
+                    display += letter
+                    correct_letters.append(guess)
+                elif letter in correct_letters:
+                    display += letter
+                else:
+                    display += "_"
+    
+            print("Word to guess: " + display)
+    
+            if guess not in chosen_word:
+                lives -= 1
+                print("You guessed " + guess + ", that's not in the word. You lose a life.")
+                if lives == 0:
+                    game_over = True
+    
+                    print("IT WAS " + chosen_word + "! YOU LOSE")
+                    print("***********************YOU LOSE**********************")
 
         if "_" not in display:
             game_over = True
@@ -78,25 +82,29 @@ elif language == "italian":
 
         display = ""
 
-        for letter in chosen_word:
-            if letter == guess:
-                display += letter
-                correct_letters.append(guess)
-            elif letter in correct_letters:
-                display += letter
-            else:
-                display += "_"
-
-        print("Parola da indovinare: " + display)
-
-        if guess not in chosen_word:
-            lives -= 1
-            print("Hai provato con la lettera " + guess + ", non c'è nella parola. Hai perso una vita!")
-            if lives == 0:
-                game_over = True
-
-                print("LA PAROLA ERA " + chosen_word + "! HAI PERSO")
-                print("***********************HAI PERSO**********************")
+        if guess == chosen_word
+            display = chosen_word
+            game_over = True
+        else:
+            for letter in chosen_word:
+                if letter == guess:
+                    display += letter
+                    correct_letters.append(guess)
+                elif letter in correct_letters:
+                    display += letter
+                else:
+                    display += "_"
+    
+            print("Parola da indovinare: " + display)
+    
+            if guess not in chosen_word:
+                lives -= 1
+                print("Hai provato con la lettera " + guess + ", non c'è nella parola. Hai perso una vita!")
+                if lives == 0:
+                    game_over = True
+    
+                    print("LA PAROLA ERA " + chosen_word + "! HAI PERSO")
+                    print("***********************HAI PERSO**********************")
 
         if "_" not in display:
             game_over = True
