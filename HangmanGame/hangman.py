@@ -43,7 +43,7 @@ if language == "english":
 
         if guess not in chosen_word:
             lives -= 1
-            print("You guessed" + guess + ", that's not in the word. You lose a life.")
+            print("You guessed " + guess + ", that's not in the word. You lose a life.")
             if lives == 0:
                 game_over = True
 
@@ -91,7 +91,7 @@ elif language == "italian":
 
         if guess not in chosen_word:
             lives -= 1
-            print("Hai provato con la lettera" + guess + ", non c'è nella parola. Hai perso una vita!")
+            print("Hai provato con la lettera " + guess + ", non c'è nella parola. Hai perso una vita!")
             if lives == 0:
                 game_over = True
 
