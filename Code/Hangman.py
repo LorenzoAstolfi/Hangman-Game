@@ -1,8 +1,8 @@
 import random
 import hangman_words
-import hangman_art
+import hangman_styles
 
-print(hangman_art.logo)
+print(hangman_styles.logo)
 
 lives = 6
 
@@ -54,7 +54,7 @@ if language == "english":
             game_over = True
             print("****************************YOU WIN****************************")
 
-        print(hangman_art.stages[lives])
+        print(hangman_styles.stages[lives])
 
 elif language == "italian":
     chosen_word = random.choice(hangman_words.word_list_it)
@@ -102,4 +102,4 @@ elif language == "italian":
             game_over = True
             print("****************************HAI VINTO****************************")
 
-        print(hangman_art.stages[lives])
+        print(hangman_styles.stages[lives])
