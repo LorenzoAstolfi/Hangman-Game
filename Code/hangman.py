@@ -1,5 +1,5 @@
 import random
-import hangman_words
+import hangman_word_list
 import hangman_styles
 
 print(hangman_styles.logo)
@@ -9,7 +9,7 @@ lives = 6
 chosen_word = ""
 language = input("\nChoose the language you would like to use (English/Italian): ").lower()
 if language == "english":
-    chosen_word = random.choice(hangman_words.word_list_en)
+    chosen_word = random.choice(hangman_word_list.word_list_en)
 
     placeholder = ""
     word_length = len(chosen_word)
@@ -57,7 +57,7 @@ if language == "english":
         print(hangman_styles.stages[lives])
 
 elif language == "italian":
-    chosen_word = random.choice(hangman_words.word_list_it)
+    chosen_word = random.choice(hangman_word_list.word_list_it)
 
     placeholder = ""
     word_length = len(chosen_word)
